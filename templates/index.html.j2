@@ -40,8 +40,14 @@
     </thead>
     <tbody>
     {% for reading in readings|reverse %}
-    {% if reading.get_difference() > 3 %}
-      <tr if class="my-highlight">
+    {% if reading.get_difference() >= 3 %}
+      <tr if class="really-warmer">
+    {% elif reading.get_difference() > 0 %}
+      <tr if class="warmer">
+    {% elif reading.get_difference() <= -3 %}
+      <tr if class="really-cooler">
+    {% elif reading.get_difference() < 0 %}
+      <tr if class="cooler">
     {% else %}
       <tr>
     {% endif %}

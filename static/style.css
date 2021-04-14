@@ -15,6 +15,33 @@ main {
   background-color: rgba(169, 235, 246, 1)!important;
 }
 
+.warmer {
+  background-color: rgba(253, 180, 158, 0.5)!important;
+}
+.warmer:hover {
+  background-color: rgba(253, 180, 158, 1)!important;
+}
+
+.really-warmer {
+  background-color: rgba(248, 102, 58, 0.5)!important;
+}
+.really-warmer:hover {
+  background-color: rgb(248, 102, 58)!important;
+}
+
+.cooler {
+  background-color: rgba(169, 235, 246, .5)!important;
+}
+.cooler:hover {
+  background-color: rgba(169, 235, 246, 1)!important;
+}
+
+.really-cooler {
+  background-color: rgba(33, 219, 252, .5)!important;
+}
+.really-cooler:hover {
+  background-color: rgb(33, 219, 252)!important;
+}
 .page-footer {
   padding-top: 0px!important;
 }

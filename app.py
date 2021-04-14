@@ -22,7 +22,7 @@ class Reading(db.Model):
     telford_temp = db.Column(db.Float, nullable=False)
 
     def get_difference(self):
-        return round(abs(self.northampton_temp - self.telford_temp), 2)
+        return round(self.northampton_temp - self.telford_temp, 2)
 
     def __repr__(self):
         return f'<Reading {self.dt} - {self.northampton_temp} - {self.telford_temp}'
